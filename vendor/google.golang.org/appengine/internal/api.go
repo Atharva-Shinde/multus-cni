@@ -2,6 +2,7 @@
 // Use of this source code is governed by the Apache 2.0
 // license that can be found in the LICENSE file.
 
+//go:build !appengine
 // +build !appengine
 
 package internal
@@ -23,8 +24,8 @@ import (
 	"sync/atomic"
 	"time"
 
+	netcontext "context"
 	"github.com/golang/protobuf/proto"
-	netcontext "golang.org/x/net/context"
 
 	basepb "google.golang.org/appengine/internal/base"
 	logpb "google.golang.org/appengine/internal/log"

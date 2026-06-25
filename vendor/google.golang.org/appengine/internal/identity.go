@@ -7,7 +7,7 @@ package internal
 import (
 	"os"
 
-	netcontext "golang.org/x/net/context"
+	netcontext "context"
 )
 
 var (

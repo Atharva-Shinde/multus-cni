@@ -8,8 +8,8 @@ import (
 	"errors"
 	"os"
 
+	netcontext "context"
 	"github.com/golang/protobuf/proto"
-	netcontext "golang.org/x/net/context"
 )
 
 var errNotAppEngineContext = errors.New("not an App Engine context")
